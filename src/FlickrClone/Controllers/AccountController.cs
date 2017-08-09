@@ -26,7 +26,13 @@ namespace FlickrClone.Controllers
         {
             return View();
         }
+
+
         //User Register
+        public IActionResult Register()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -42,6 +48,10 @@ namespace FlickrClone.Controllers
             }
         }
         //User Login
+        public IActionResult Login()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {

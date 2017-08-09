@@ -42,7 +42,7 @@ namespace FlickrClone
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello Hunter!");
+                await context.Response.WriteAsync("Hello Punter!");
             });
         }
     }

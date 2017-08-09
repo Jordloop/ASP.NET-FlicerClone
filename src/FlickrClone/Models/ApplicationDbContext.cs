@@ -7,10 +7,10 @@ namespace FlickrClone.Models
     {
         public DbSet<ApplicationUser> users { get; set; }
 
-        public ApplicationDbContext()
-        {
+        //public ApplicationDbContext()
+        //{
 
-        }
+        //}
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
