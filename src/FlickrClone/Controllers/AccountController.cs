@@ -22,11 +22,14 @@ namespace FlickrClone.Controllers
             _db = db;
         }
 
+        public AccountController()
+        {
+        }
+
         public IActionResult Index()
         {
             return View();
         }
-
 
         //User Register
         public IActionResult Register()
