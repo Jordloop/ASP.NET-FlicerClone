@@ -21,7 +21,7 @@ namespace FlickrClone.Controllers
             _signInManager = signInManager;
             _db = db;
         }
-
+        //Used for testing
         public AccountController()
         {
         }

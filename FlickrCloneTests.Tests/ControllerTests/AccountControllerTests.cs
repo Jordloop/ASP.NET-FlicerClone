@@ -9,6 +9,7 @@ namespace FlickrCloneTests.Tests.ControllerTests
 {
     public class AccountControllerTests
     {
+        //Test Accont Index View
         [Fact]
         public void Get_ViewResult_Index_Test()
         {
@@ -21,5 +22,34 @@ namespace FlickrCloneTests.Tests.ControllerTests
             //Assert
             Assert.IsType<ViewResult>(result);
         }
+
+        //Test Accont Login View
+        [Fact]
+        public void Get_ViewResult_Login_Test()
+        {
+            //Arrange
+            AccountController controller = new AccountController();
+
+            //Act
+            var result = controller.Login();
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+
+        //Test Accont Register View
+        [Fact]
+        public void Get_ViewResult_Register_Test()
+        {
+            //Arrange
+            AccountController controller = new AccountController();
+
+            //Act
+            var result = controller.Register();
+
+            //Assert
+            Assert.IsType<ViewResult>(result);
+        }
+
     }
 }
